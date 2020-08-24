@@ -1,0 +1,17 @@
+GET http://localhost:3010
+
+###
+
+POST  http://localhost:3010/posts
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"
+
+file
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; file="./home.png"
+Content-Type: image/png
+# ../public/i mages/
+< ./home.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
